@@ -49,14 +49,24 @@ export function HeroSection() {
           </p>
 
           <div className="flex gap-4 justify-center flex-wrap">
+            
+            {/* Explore GIS Map Button (keep as is or link later) */}
             <button className="px-8 py-4 bg-white text-blue-900 rounded-xl hover:bg-blue-50 transition-all shadow-lg shadow-blue-900/20 flex items-center gap-2">
               <MapPin className="w-5 h-5" />
               Explore GIS Map
             </button>
-            <button className="px-8 py-4 bg-white/10 backdrop-blur-md text-white rounded-xl hover:bg-white/20 transition-all border border-white/20 flex items-center gap-2">
+
+            {/* ✅ UPDATED VIEW DASHBOARD BUTTON */}
+            <a
+              href="https://srinirao082.github.io/Dsrgis/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-8 py-4 bg-white/10 backdrop-blur-md text-white rounded-xl hover:bg-white/20 transition-all border border-white/20 flex items-center gap-2"
+            >
               <LineChart className="w-5 h-5" />
               View Dashboard
-            </button>
+            </a>
+
           </div>
         </motion.div>
       </div>
